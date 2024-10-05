@@ -1,0 +1,63 @@
+{
+    "name": "template-react",
+    "description": "A Phaser 3 project template that demonstrates React communication and uses Vite for bundling.",
+    "version": "1.1.1",
+    "type": "module",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/phaserjs/template-react.git"
+    },
+    "author": "Phaser Studio <support@phaser.io> (https://phaser.io/)",
+    "license": "MIT",
+    "licenseUrl": "http://www.opensource.org/licenses/mit-license.php",
+    "bugs": {
+        "url": "https://github.com/phaserjs/template-react/issues"
+    },
+    "homepage": "https://github.com/phaserjs/template-react#readme",
+    "keywords": [
+        "phaser",
+        "phaser3",
+        "react",
+        "vite"
+    ],
+    "scripts": {
+        "dev": "node log.js dev & vite --config vite/config.dev.mjs",
+        "build": "node log.js build & vite build --config vite/config.prod.mjs",
+        "dev-nolog": "vite --config vite/config.dev.mjs",
+        "build-nolog": "vite build --config vite/config.prod.mjs"
+    },
+    "dependencies": {
+        "@metaplex-foundation/mpl-core": "^1.1.1",
+        "@metaplex-foundation/mpl-token-metadata": "^3.2.1",
+        "@metaplex-foundation/mpl-toolbox": "^0.9.4",
+        "@metaplex-foundation/umi": "^0.9.2",
+        "@metaplex-foundation/umi-bundle-defaults": "^0.9.2",
+        "@metaplex-foundation/umi-signer-wallet-adapters": "^0.9.2",
+        "@solana/wallet-adapter-base": "^0.9.23",
+        "@solana/wallet-adapter-react": "^0.15.35",
+        "@solana/wallet-adapter-react-ui": "^0.9.35",
+        "@solana/wallet-adapter-wallets": "^0.19.32",
+        "@solana/web3.js": "^1.95.3",
+        "crypto-browserify": "^3.12.0",
+        "phaser": "^3.85.2",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "react-router-dom": "^6.26.2"
+    },
+    "devDependencies": {
+        "@esbuild-plugins/node-globals-polyfill": "^0.2.3",
+        "@esbuild-plugins/node-modules-polyfill": "^0.2.2",
+        "@types/react": "^18.3.3",
+        "@types/react-dom": "^18.3.0",
+        "@vitejs/plugin-react": "^4.3.1",
+        "eslint": "^8.57.0",
+        "eslint-plugin-react": "^7.34.2",
+        "eslint-plugin-react-hooks": "^4.6.2",
+        "eslint-plugin-react-refresh": "^0.4.7",
+        "node-polyfill-webpack-plugin": "^4.0.0",
+        "rollup-plugin-polyfill-node": "^0.13.0",
+        "terser": "^5.28.1",
+        "vite": "^5.3.1",
+        "vite-plugin-node-polyfills": "^0.22.0"
+    }
+}
