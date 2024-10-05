@@ -47,5 +47,15 @@ export default defineConfig({
         phaser: "phaser/dist/phaser.js",
       },
     },
+    optimizeDeps: {
+      esbuildOptions: {
+        define: {
+          global: "globalThis",
+          process: JSON.stringify({
+            env: {},
+          }),
+        },
+      },
+    },
   },
 });
