@@ -18,7 +18,10 @@ const phasermsg = () => {
 }
 
 export default defineConfig({
-  base: "./",
+  base: "/your-app-name/", // Vercelでのプロジェクト名に置き換える
+  define: {
+    global: "window",
+  },
   plugins: [react(), phasermsg()],
   logLevel: "warning",
   build: {
@@ -40,14 +43,5 @@ export default defineConfig({
       },
     },
   },
-  optimizeDeps: {
-    esbuildOptions: {
-      define: {
-        global: "globalThis",
-        process: JSON.stringify({
-          env: {},
-        }),
-      },
-    },
-  },
 });
+
