@@ -18,10 +18,7 @@ const phasermsg = () => {
 }
 
 export default defineConfig({
-  base: "/", // Vercelでのプロジェクト名に置き換える
-  define: {
-    global: "globalThis",
-  },
+  base: "./",
   plugins: [react(), phasermsg()],
   logLevel: "warning",
   build: {
@@ -40,6 +37,14 @@ export default defineConfig({
       mangle: true,
       format: {
         comments: false,
+      },
+    },
+    optimizeDeps: {
+      include: ["phaser"],
+    },
+    resolve: {
+      alias: {
+        phaser: "phaser/dist/phaser.js",
       },
     },
   },
