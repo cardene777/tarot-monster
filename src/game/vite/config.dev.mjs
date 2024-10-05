@@ -20,7 +20,7 @@ export default defineConfig({
       define: {
         global: "globalThis",
         process: JSON.stringify({
-          env: {}, // 必要に応じて環境変数を追加
+          env: {},
         }),
       },
     },

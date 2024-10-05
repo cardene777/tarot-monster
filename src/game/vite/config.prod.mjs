@@ -1,6 +1,5 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import polyfillNode from "rollup-plugin-polyfill-node";
 
 const phasermsg = () => {
     return {
@@ -20,7 +19,7 @@ const phasermsg = () => {
 
 export default defineConfig({
   base: "./",
-  plugins: [react(), phasermsg(), polyfillNode()],
+  plugins: [react(), phasermsg()],
   logLevel: "warning",
   build: {
     rollupOptions: {
@@ -39,13 +38,6 @@ export default defineConfig({
       format: {
         comments: false,
       },
-    },
-  },
-  resolve: {
-    alias: {
-      crypto: "crypto-browserify",
-      stream: "stream-browserify",
-      buffer: "buffer",
     },
   },
   optimizeDeps: {
