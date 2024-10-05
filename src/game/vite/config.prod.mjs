@@ -18,7 +18,7 @@ const phasermsg = () => {
 }
 
 export default defineConfig({
-  base: "/your-app-name/", // Vercelでのプロジェクト名に置き換える
+  base: "/", // Vercelでのプロジェクト名に置き換える
   define: {
     global: "window",
   },
@@ -44,4 +44,3 @@ export default defineConfig({
     },
   },
 });
-
