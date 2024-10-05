@@ -41,13 +41,6 @@ export default defineConfig({
     },
     optimizeDeps: {
       include: ["phaser"],
-    },
-    resolve: {
-      alias: {
-        phaser: "phaser/dist/phaser.js",
-      },
-    },
-    optimizeDeps: {
       esbuildOptions: {
         define: {
           global: "globalThis",
@@ -55,6 +48,11 @@ export default defineConfig({
             env: {},
           }),
         },
+      },
+    },
+    resolve: {
+      alias: {
+        phaser: "phaser/dist/phaser.js",
       },
     },
   },
