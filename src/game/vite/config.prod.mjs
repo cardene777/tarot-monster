@@ -20,7 +20,7 @@ const phasermsg = () => {
 export default defineConfig({
   base: "/", // Vercelでのプロジェクト名に置き換える
   define: {
-    global: "window",
+    global: "globalThis",
   },
   plugins: [react(), phasermsg()],
   logLevel: "warning",
