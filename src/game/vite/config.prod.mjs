@@ -1,21 +1,21 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
 const phasermsg = () => {
-    return {
-        name: 'phasermsg',
-        buildStart() {
-            process.stdout.write(`Building for production...\n`);
-        },
-        buildEnd() {
-            const line = "---------------------------------------------------------";
-            const msg = `❤️❤️❤️ Tell us about your game! - games@phaser.io ❤️❤️❤️`;
-            process.stdout.write(`${line}\n${msg}\n${line}\n`);
+  return {
+    name: "phasermsg",
+    buildStart() {
+      process.stdout.write(`Building for production...\n`);
+    },
+    buildEnd() {
+      const line = "---------------------------------------------------------";
+      const msg = `❤️❤️❤️ Tell us about your game! - games@phaser.io ❤️❤️❤️`;
+      process.stdout.write(`${line}\n${msg}\n${line}\n`);
 
-            process.stdout.write(`✨ Done ✨\n`);
-        }
-    }
-}
+      process.stdout.write(`✨ Done ✨\n`);
+    },
+  };
+};
 
 export default defineConfig({
   base: "./",
@@ -39,21 +39,22 @@ export default defineConfig({
         comments: false,
       },
     },
-    optimizeDeps: {
-      include: ["phaser"],
-      esbuildOptions: {
-        define: {
-          global: "globalThis",
-          process: JSON.stringify({
-            env: {},
-          }),
-        },
+  },
+  optimizeDeps: {
+    include: ["phaser"],
+    esbuildOptions: {
+      define: {
+        global: "globalThis",
       },
     },
-    resolve: {
-      alias: {
-        phaser: "phaser/dist/phaser.js",
-      },
+  },
+  resolve: {
+    alias: {
+      phaser: "phaser/dist/phaser.js",
     },
+  },
+  define: {
+    global: "globalThis",
+    "process.env": {},
   },
 });
