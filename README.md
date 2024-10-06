@@ -1,5 +1,11 @@
 # 🤡 Tarot Monster
 
+<p align="center">
+  <a href="https://tarot-monster.vercel.app">
+    <img alt="Tarot Monster" style="width: 50%" src="https://github.com/user-attachments/assets/cf2822fd-17f8-4abf-b310-df758c7abc1e"/>
+  </a>
+</p>
+
 ## 💻 Site
 
 - [https://tarot-monster.vercel.app/](https://tarot-monster.vercel.app/)
