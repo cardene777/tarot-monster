@@ -6,6 +6,10 @@
   </a>
 </p>
 
+## 🖼️ Slide
+
+- [https://www.canva.com/design/DAGSgzszIK0/XTDbWAuqMiuhOmbDVLww6A/view?utm_content=DAGSgzszIK0&utm_campaign=designshare&utm_medium=link&utm_source=editor](https://www.canva.com/design/DAGSgzszIK0/XTDbWAuqMiuhOmbDVLww6A/view?utm_content=DAGSgzszIK0&utm_campaign=designshare&utm_medium=link&utm_source=editor)
+
 ## 💻 Site
 
 - [https://tarot-monster.vercel.app/](https://tarot-monster.vercel.app/)
